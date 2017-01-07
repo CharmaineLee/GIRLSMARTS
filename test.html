@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <title>My first web page</title>
+	<link rel="stylesheet" href="style.css">
+
+    <!-- This is a comment, by the way -->
+
+</head>
+
+<body>
+<h1> How to use HTML </h1>
+<p>If you want text to show up like above. Enclose it in h1 tags. If you choose a lower number after h1 like h2 the heading is gonna seem smaller and less important. An opening tag looks like &lt;tagname&gt;. A closing tag looks like &lt;/tagname&gt;</p>
+
+<h2>This paragraph is about text formatting</h2>
+<p> Notice this heading is smaller because it's gives less information about the page as whole but only about a paragraph. But the heading tells us, that this is a distinct subsection of the page with a purpose.</p>
+<p>If you want text to show up below a heading use a p tag, then write the text and enclose it with a closing p tag</p>
+<p>A simple page put together using HTML.<em>If you want to emphasize something you can use an em tag. This could be the important part of a paragraph.</em> <strong>If you want stuff to appear in bold use a strong tag. This is usually used to make a line stand out.</strong><strong><em> You can combine both tags if you wish too. Just remember to close the tags before you start a new line. </strong></em> <strong>If you don't do that, the browser will apply the tag until it encounters the next enclosing tag. If there is none it applies to the entire document. This line has an unclosed strong tag.A simple page put together using HTML. A simple page put together using HTML. This line has an enclosing strong tag. </strong>Notice the 'normal' text formatting appears again.</p> 
+<p>Wow that looked so cluttered. How Do I make stuff look not cluttered? <br> Use a br tag. This tag has no enclosing tag like the other tags mentioned. Don't believe me? <br> <strong>Below is the same paragraph above, with br tags</strong> </p>
+<p>A simple page put together using HTML.<br> <em>If you want to emphasize something you can use an em tag. This could be the important part of a paragraph.</em> <br><strong>If you want stuff to appear in bold use a strong tag. This is usually used to make a line stand out.</strong><br><strong><em> You can combine both tags if you wish too. Just remember to close the tags before you start a new line. </strong></em><br> <strong>If you don't do that, the browser will apply the tag until it encounters the next enclosing tag. If there is none it applies to the entire document. This line has an unclosed strong tag.<br>A simple page put together using HTML. <br>A simple page put together using HTML. <br>This line has an enclosing strong tag. </strong><br> Notice the 'normal' text formatting appears again.</p> 
+
+
+<h2>HTML lists.</h2>
+<p> You can create lists like this by &lt;ul&gt; and then enclosing by the end of the list. Let's make a list about some of the things you can do with HTML.</p>
+<ul>
+    <li>Make lists like this or similar to it. Use a &lt;li&gt; to have a bulletpoint appear next to the list element. Use it for every element.</li>
+    If you forget to do that it looks out of place like <em>this</em>. 
+    <li>Format text.</li>
+	<li>Link to other websites via hyperlinks such as <a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML">this article that teaches HTML in more depth</a>.</li>
+    <li>To link to a website. Use a tag like this &lt;a href="URL you want to link to such as https://www.facebook.com/"&gt; and then enclose it with &lt;/a&lt;</li>
+	<li>Embed videos or images. I'll get to this in a minute. </li>	
+</ul>
+
+<p>A list like the one above is called an unordered list because the order of the elements does not matter. <br> But sometimes, for example, while giving someone directions ,the order of the bulletpoints matters and you want to specify that to the users of your website.</p>
+
+<p> In these cases you should use an ordered list &lt;ol&gt; tag. Don't forget to use a li tag for each element and also close the list. </p>
+<ol>
+  <li>Drive to the end of the road</li>
+  <li>Turn right</li>
+  <li>Go straight across the first two roundabouts</li>
+  <li>Turn left at the third roundabout</li>
+  <li>The school is on your right, 300 meters up the road</li>
+</ol>
+
+<h2>Media in html. </h2>
+<p> You can embed images by using an &lt;img src="Whatever link you wish to link to" width="somevalue" height="somevalue"&gt;. The image below has a width of 400 and a height of 341. </p>
+<img src=http://emrl.com/app/uploads/2009/12/html.jpg width="400" height="341">
+
+
+<p> You can also embed videos from Youtube very simply. Go to a youtube video that you want to embed. Choose share video to see a list of options. Go to embed and you can copy paste a tag that allows you to embed the video like this. </p>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/bWPMSSsVdPk" frameborder="0" allowfullscreen></iframe>
+
+<h3>Some random form</h3>
+<p><strong>Note:</strong> It looks the part, but won't do a damned thing.</p>
+
+<form action="somescript.php" method="post">
+
+<p>Name:</p>
+<p><input name="name" value="Your name"></p>
+
+<p>Comments: </p>
+<p><textarea rows="10" cols="20" name="comments">Your comments</textarea></p>
+
+<p>Are you:</p>
+<p><input type="radio" name="areyou" value="male"> Male</p>
+<p><input type="radio" name="areyou" value="female"> Female</p>
+<p><input type="radio" name="areyou" value="hermaphrodite"> An hermaphrodite</p>
+<p><input type="radio" name="areyou" value="asexual" checked> Asexual</p>
+
+<p><input type="submit"></p>
+
+</form>
+
+</body>
+
+</html>
